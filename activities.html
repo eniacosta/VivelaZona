@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¡Vive La Zona!</title>
+	<meta charset="utf-8">
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/activities.css">
+  	<!-- google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid:100,300,400,900|Nunito:300,400,600,700,800,900" rel="stylesheet">
+  	<!-- fontawesome -->
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  	<!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/slick/slick.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="images/logo-nav.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link normal-links" href="about.html">About</a>
+          <a class="nav-item nav-link normal-links" href="#">Activities</a>
+          <a class="nav-item nav-link nav-high" href="challenge.html">challenge</a>
+          <a class="nav-item nav-link normal-links" href="myzone.html">My Zone</a>
+          <a class="nav-item nav-link normal-links" href="#">Log Out</a>
+        </div>
+      </div>
+  </nav>
+  <!-- NAVBAR ENDS -->
+
+  <!-- TITLE AND FILTERS -->
+
+  <div class="container row filters">
+    <div class="row">
+      <div class="col-md-4">
+        <h1 class="fil-title">102</h1>
+        <h2 class="fil-sub">events</h2>
+      </div>
+      <div class="col-md-8 filters">
+        <h3 class="fi-header">Filters:</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <form>
+                <select placeholder="Date" class="form-control">
+                  <option value="" selected disabled>Event type</option>
+                  <option>Music</option>
+                  <option>Arts and Theater</option>
+                  <option>Gastronomic</option>
+                  <option>Cultural</option>
+                </select>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form>
+                <select placeholder="Date" class="form-control">
+                  <option value="" selected disabled>Costs
+                  </option>
+                  <option>Free</option>
+                  <option>Paying</option>
+                </select>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <form>
+                 <select placeholder="Date" class="form-control">
+                  <option value="" selected disabled>Date</option>
+                  <option>Today</option>
+                  <option>Tomorrow</option>
+                  <option>This Week</option>
+                  <option>Next Week</option>
+                  <option>This Month</option>
+                </select>
+            </form>
+          </div>
+          <div class="align">
+            <button class="btn">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ENDS TITLE AND FILTERS -->
+
+<!-- EVENTS -->
+
+  <div class="row center container">
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail" href="activities-detalle2.html"><img class="card-img-top" src="images/event-1.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Dance through Years</h4>
+          <div class="row icons">
+            <div class="col-md-4">
+              <img class="icon-first" src="images/paying.png">
+            </div>
+            <div class="col-md-4">
+              <img src="images/inside.png">
+            </div>
+            <div class="col-md-4">
+              <img class="icon-last" src="images/night.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail" href="activities-detalle.html"><img class="card-img-top" src="images/event-2.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">The Street Carnival</h4>
+          <div class="row icons">
+            <div class="col-md-4">
+              <img class="icon-first" src="images/free.png">
+            </div>
+            <div class="col-md-4">
+              <img src="images/out.png">
+            </div>
+            <div class="col-md-4">
+              <img class="icon-last" src="images/day.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail" href="activities-detalle3.html"><img class="card-img-top" src="images/event-3.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Artisan flea Market</h4>
+         <div class="row icons">
+            <div class="col-md-4">
+              <img class="icon-first" src="images/free.png">
+            </div>
+            <div class="col-md-4">
+              <img src="images/out.png">
+            </div>
+            <div class="col-md-4">
+              <img class="icon-last" src="images/day.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail" href="activities-detalle4.html"><img class="card-img-top" src="images/event-4.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Dominican Street Bites</h4>
+          <div class="row icons">
+            <div class="col-md-4">
+              <img class="icon-first" src="images/free.png">
+            </div>
+            <div class="col-md-4">
+              <img src="images/out.png">
+            </div>
+            <div class="col-md-4">
+              <img class="icon-last" src="images/day.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row center container">
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail"><img class="card-img-top" src="images/casa.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Light Show Real</h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail"><img class="card-img-top" src="images/gru.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Bonyé Sundays</h4>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a class="event-detail"><img class="card-img-top" src="images/jazz.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Jazz Thursdays</h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card" style="width: 100%;">
+        <a><img class="card-img-top" src="images/abril.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">Expo: Guerra de Abril</h4>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer foo2">
+    <div class="container row">
+      <div class="col-md-6">
+        <img class="fooimg" src="images/logo.png">
+      </div>
+      <div class="col-md-6 contact">
+        <div class="row socials">
+          <div class="col-md-4"><p><img src="images/ig.png">@vivelazona</p></div>
+          <div class="col-md-4"><p><img src="images/fb.png">/vivelazona</div>
+          <div class="col-md-4"><p><img src="images/tp.png">+1 849-332-2343</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER ENDS -->
+
+
+  <!-- Scripts principales Bootstrap y JS -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="js/plugins/slick/slick.js"></script>
+  <script type="text/javascript">
+    $('.single-item').slick({
+     infinite: true,
+     dots: false,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+      autoplaySpeed: 3000,
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    });
+  </script>
+
+  
+  <!-- Smooth Scroll -->
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>
+</html>

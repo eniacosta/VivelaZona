@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¡Vive La Zona!</title>
+	<meta charset="utf-8">
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/challenge.css">
+  	<!-- google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid:100,300,400,900|Nunito:300,400,600,700,800,900" rel="stylesheet">
+  	<!-- fontawesome -->
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  	<!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/slick/slick.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="images/logo-nav.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link normal-links" href="about.html">About</a>
+          <a class="nav-item nav-link normal-links" href="activities.html">Activities</a>
+          <a class="nav-item nav-link nav-high" href="challenge.html">challenge</a>
+          <a class="nav-item nav-link normal-links" href="myzone.html">My Zone</a>
+          <a class="nav-item nav-link normal-links" href="#">Log Out</a>
+        </div>
+      </div>
+  </nav>
+  <!-- NAVBAR ENDS -->
+
+  <!-- MAIN TITLE -->
+  <div class="title-bg">
+    <div class="container row total-width">
+      <div class="col-md-4">
+        <h2 class="main-title">Weekly Challenge <img class="title-img" src="images/cha-left.png"></h2>
+      </div>
+      <div class="col-md-4">
+        <p class="cha-title">So you think you know the Colonial Zone, take a chance and participate on our weekly adventure.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="title2-align">
+          <h3 class="cha-title2">Explore and win prizes!</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN SECTION FROZEN TRAVELERS -->
+  <div class="container-fluid frozen">
+    <div class="container row">
+      <div class="col-md-6 align2">
+        <h1 class="fro-title">The frozen<br>time travelers</h1>
+        <p class="fro-text">Go explore the Zona Colonial and find the frozen time travelers, also known as the statues of Juan Pablo Duarte, Cristobal Colón and Francisco Gregorio Billini which adorn the three main parts of the Zona Colonial.</p>
+      </div>
+      <div class="col-md-6 align">
+        <h2 class="selfie">Upload your funiest selfie</h2>
+        <div class="cellphone">
+          <button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Upload your image">
+          </button>
+        </div>
+        <div class="submit">
+          <button class="btn2">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer foo2">
+    <div class="container row">
+      <div class="col-md-6">
+        <img class="fooimg" src="images/logo.png">
+      </div>
+      <div class="col-md-6 contact">
+        <div class="row socials">
+          <div class="col-md-4"><p><img src="images/ig.png">@vivelazona</p></div>
+          <div class="col-md-4"><p><img src="images/fb.png">/vivelazona</div>
+          <div class="col-md-4"><p><img src="images/tp.png">+1 849-332-2343</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER ENDS -->
+
+
+
+
+  <!-- Scripts principales Bootstrap y JS -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- data toogle -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="js/plugins/slick/slick.js"></script>
+  <script type="text/javascript">
+    $('.single-item').slick({
+     infinite: true,
+     dots: false,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+      autoplaySpeed: 3000,
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    });
+  </script>
+
+  
+  <!-- Smooth Scroll -->
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>
+</html>

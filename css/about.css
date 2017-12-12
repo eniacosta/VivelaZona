@@ -1,0 +1,155 @@
+/*GENERAL*/
+.row{
+	width: 100%;
+	min-width: 100%;
+	margin: 0 auto;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 100%;
+    min-width: 100%;
+}
+
+/*NABVAR*/
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    margin-left: 88px;
+}
+
+.navbar-brand img{
+	width: 100px;
+}
+
+.ml-auto {
+    margin-left: auto!important;
+    padding-right: 80px;
+}
+.bg-dark {
+    background-color: #EC4863!important;
+}
+
+.normal-links{
+	text-transform: lowercase;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 500;
+	font-size: 17px;	
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.nav-high{
+	font-weight: 900;
+	font-size: 17px;
+}
+
+/*ABOUT*/
+.about-img{
+	width: 100%;
+	padding-top: 60px;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.about-img-2{
+	width: auto;
+	height: 500px;
+	padding-top: 60px;
+	margin: 0 auto;
+}
+
+.about-title {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 53px;
+    color: #98D359;
+    padding-top: 60px;
+}
+
+.about-title-img{
+	margin-left: 5px;
+}
+
+.about-text{
+	font-family: 'Nunito', sans-serif;
+	/*color: white;*/
+	font-weight: 700;
+	text-align: left;
+	font-size: 17px;
+	text-align: justify;
+	color: #7a7a7a;
+	text-indent: 50px;
+}
+
+.img-center{
+	text-align: center;
+}
+
+/*PARTNERS*/
+
+.partners{
+	min-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0 80px 0;
+}
+
+.pa-title{
+	margin: 0 auto;
+}
+
+.part{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.part img{
+	width: 100%
+}
+
+.align2{
+	text-align: center;
+}
+
+/*FOOTER*/
+.footer{
+	background-color: #f7f6f6;
+}
+.foo2{
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.fooimg {
+    width: 80px;
+}
+
+.socials {
+    line-height: 4;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+.socials img {
+    margin-right: 10px;
+}
+
+.socials p{
+	margin-bottom: 0;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¡Vive La Zona!</title>
+	<meta charset="utf-8">
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myzone.css">
+  	<!-- google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Londrina+Solid:100,300,400,900|Nunito:300,400,600,700,800,900" rel="stylesheet">
+  	<!-- fontawesome -->
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  	<!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/slick/slick.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><img src="images/logo-nav.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link normal-links" href="about.html">About</a>
+          <a class="nav-item nav-link normal-links" href="activities.html">Activities</a>
+          <a class="nav-item nav-link nav-high" href="challenge.html">challenge</a>
+          <a class="nav-item nav-link normal-links" href="">My Zone</a>
+          <a class="nav-item nav-link normal-links" href="#">Log Out</a>
+        </div>
+      </div>
+  </nav>
+  <!-- NAVBAR ENDS -->
+
+  <div class="container-fluid profile">
+    <div class="container row profile2">
+      <div class="profile-bg col-md-6">
+        <img src="images/profile-pic.png">
+      </div>
+      <div class="col-md-6">
+        <h2 class="pro-name">Joseph Aguilera</h2>
+        <h4 class="pro-mail">josephagu@gmail.com</h4>
+        <h4 class="pro-subtitle">Completed Challenges: <span class="numbers">4</span></h4>
+        <h4 class="pro-subtitle">Won Challenges: <span class="numbers">1</span></h4>
+      </div>
+      <div class="row">
+        <div class="center">
+          <h2 class="pro-title"> My Challenge History</h2>
+        </div>
+        <div class="row">
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"><img class="image-tro2"  src="images/trofeo5.png"></div>
+          <div class="center2 col-md-1"><img class="image-tro" src="images/trofeo2.png"></div>
+          <div class="center2 col-md-1"><img src="images/trofeo3.png"></div>
+          <div class="center2 col-md-1"><img class="image-tro1" src="images/trofeo4.png"></div>
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"></div>
+          <div class="center2 col-md-1"></div>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+  <div class="container-fluid pro-slider">
+    <div class="container">
+      <div class="center pro-sli-title">
+        <h2 class="pro-sli-title">My Photo Album</h2>
+      </div>
+      <div class="single-item">
+        <div><img src="images/pa.png"></div>
+        <div><img src="images/pa4.png"></div>
+        <div><img src="images/pa2.png"></div>
+        <div><img src="images/pa3.png"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer foo2">
+    <div class="container row">
+      <div class="col-md-6">
+        <img class="fooimg" src="images/logo.png">
+      </div>
+      <div class="col-md-6 contact">
+        <div class="row socials">
+          <div class="col-md-4"><p><img src="images/ig.png">@vivelazona</p></div>
+          <div class="col-md-4"><p><img src="images/fb.png">/vivelazona</div>
+          <div class="col-md-4"><p><img src="images/tp.png">+1 849-332-2343</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER ENDS -->
+
+
+  <!-- Scripts principales Bootstrap y JS -->
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="js/plugins/slick/slick.js"></script>
+  <script type="text/javascript">
+    $('.single-item').slick({
+     infinite: true,
+     dots: false,
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     autoplay: true,
+      autoplaySpeed: 3000,
+    });
+  </script>
+
+  <script type="text/javascript">
+    $('.multiple-items').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    });
+  </script>
+
+  
+  <!-- Smooth Scroll -->
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('clic', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>
+</html>
